@@ -8,7 +8,7 @@ const RecipeDetails = () => {
     const [timeLeft, setTimeLeft] = useState(null);
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
-    // Store the interval reference in a ref so it persists between renders
+
     const timerRef = React.useRef(null);
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const RecipeDetails = () => {
                 const response = await fetch(`http://localhost:3001/recipes/${id}`);
                 const data = await response.json();
                 setRecipe(data);
-                setTimeLeft(data.timer * 60);  // Convert timer to seconds
+                setTimeLeft(data.timer * 60);
             } catch (error) {
                 console.error('Error fetching recipe details:', error);
             }
@@ -25,7 +25,7 @@ const RecipeDetails = () => {
 
         fetchRecipeDetails();
 
-        // Cleanup function to clear interval when component unmounts
+
         return () => {
             if (timerRef.current) {
                 clearInterval(timerRef.current);
@@ -44,7 +44,6 @@ const RecipeDetails = () => {
     };
 
     const startTimer = () => {
-        // Clear any existing timer first
         if (timerRef.current) {
             clearInterval(timerRef.current);
         }
@@ -71,8 +70,8 @@ const RecipeDetails = () => {
     };
 
     const resetTimer = () => {
-        stopTimer(); // Stop the timer first
-        setTimeLeft(recipe.timer * 60); // Reset to the original timer in seconds
+        stopTimer(); 
+        setTimeLeft(recipe.timer * 60); 
     };
 
     if (!recipe) return <div>Loading...</div>;
@@ -189,8 +188,6 @@ const RecipeDetails = () => {
                             )}
                         </Box>
 
-                        {/* Rest of your component remains the same */}
-                        {/* Save to Favorites Button */}
                         <Box sx={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
                             <Button
                                 variant="contained"

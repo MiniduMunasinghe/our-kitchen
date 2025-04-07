@@ -11,13 +11,13 @@ const Profile = () => {
         const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
         if (!loggedInUser) {
-            navigate('/login'); // Redirect to login if no user is logged in
+            navigate('/login'); 
         } else {
             setUser(loggedInUser);
         }
     }, [navigate]);
 
-    if (!user) return null; // Wait until user data is loaded
+    if (!user) return null; 
 
     return (
         <Container maxWidth="md" sx={{ paddingTop: '80px' }}>

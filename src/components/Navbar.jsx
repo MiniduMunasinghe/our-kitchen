@@ -35,7 +35,7 @@ const Navbar = () => {
                 <Toolbar sx={{ 
                     justifyContent: 'center',
                     padding: '0 30px',
-                    gap: 4 // This adds consistent spacing between all items
+                    gap: 4 
                 }}>
                     {/* Home Link */}
                     <Button

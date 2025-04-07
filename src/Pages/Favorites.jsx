@@ -76,7 +76,7 @@ const Favorites = () => {
                                             marginTop: '16px',
                                         }}
                                         onClick={(e) => {
-                                            e.preventDefault(); // Prevent navigating to recipe details while removing from favorites
+                                            e.preventDefault(); 
                                             handleRemoveFavorite(recipe.id);
                                         }}
                                     >
