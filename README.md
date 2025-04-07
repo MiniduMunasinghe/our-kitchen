@@ -1,4 +1,4 @@
-🍽️ Our Kitchen – Recipe Sharing Platform
+#🍽️ Our Kitchen – Recipe Sharing Platform
 Our Kitchen is a simple and interactive recipe sharing web application built with React + Vite, styled using Material UI. It's designed to let users explore, add, and share recipes with ease.
 
 🔧 Tech Stack
