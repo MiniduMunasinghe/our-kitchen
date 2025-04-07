@@ -1,0 +1,42 @@
+/* Global Styles */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-gradient: linear-gradient(to right, #FFB347, #FF6F1B);
+  --primary-color: #FF6F1B;  /* Sunset Orange */
+  --secondary-color: #FFB347; /* Light Orange */
+  --accent-color: #FFC62E;  /* Golden Yellow */
+  --hover-color: #e65a13;   /* Darker Orange for hover effects */
+  --text-color: #333;       /* Dark Text for better readability */
+  --background-color: #ffffff; /* White background */
+  --button-text-color: white;
+}
+
+/* Body Styles */
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centering Wrapper for Pages */
+.page-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* leaves space for navbar */
+  box-sizing: border-box;
+}
+

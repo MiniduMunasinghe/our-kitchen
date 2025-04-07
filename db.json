@@ -1,0 +1,74 @@
+{
+"recipes": [
+    {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "cookingTime": "20 mins",
+    "rating": 4.5,
+    "image": "/images/Database/Carbonara.jpg",
+    "category": "pasta",
+    "ingredients": ["spaghetti", "eggs", "bacon", "cheese"],
+    "instructions": ["Boil pasta", "Fry bacon", "Mix with eggs and cheese"],
+    "timer": 20,  
+    "additionalCategories": ["healthy"]  
+    },
+    {
+    "id": 2,
+    "title": "Pancakes",
+    "cookingTime": "10 mins",
+    "rating": 4.7,
+    "image": "/images/Database/Pancake.jpg",
+    "category": "desserts",
+    "ingredients": ["flour", "milk", "eggs", "butter"],
+    "instructions": ["Mix ingredients", "Fry on pan"],
+    "timer": 10,  
+    "additionalCategories": ["vegan"]  
+    },
+    {
+    "id": 3,
+    "title": "Iced Lemon Tea",
+    "cookingTime": "5 mins",
+    "rating": 4.2,
+    "image": "/images/Database/IcedLemon.jpg",
+    "category": "drinks",
+    "ingredients": ["black tea", "lemon", "sugar", "ice"],
+    "instructions": ["Brew tea", "Add lemon juice and sugar", "Serve with ice"],
+    "timer": 5,  
+    "additionalCategories": ["healthy"]  
+    },
+    {
+    "id": 4,
+    "title": "Chicken Chow Mein",
+    "cookingTime": "25 mins",
+    "rating": 4.6,
+    "image": "/images/Database/ChowMein.jpg",
+    "category": "noodles",
+    "ingredients": ["noodles", "chicken", "vegetables", "soy sauce"],
+    "instructions": ["Boil noodles", "Stir-fry chicken and veggies", "Mix with sauce"],
+    "timer": 25,  
+    "additionalCategories": ["healthy"]  
+    },
+    {
+    "id": 5,
+    "title": "Vegetable Fried Rice",
+    "cookingTime": "15 mins",
+    "rating": 4.4,
+    "image": "/images/Database/Vegitable.jpg",
+    "category": "fried rice",
+    "ingredients": ["rice", "mixed vegetables", "soy sauce", "egg"],
+    "instructions": ["Cook rice", "Stir-fry veggies", "Add egg and mix all"],
+    "timer": 15,  
+    "additionalCategories": ["vegan", "healthy"] 
+    }
+],
+"users": [
+    {
+    "username": "user1",
+    "password": "user1"
+    },
+    {
+    "username": "user2",
+    "password": "user2"
+    }
+]
+}
